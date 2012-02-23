@@ -1,4 +1,3 @@
-
 #ifndef GDT_H
 #define GDT_H
 
@@ -19,7 +18,7 @@ class gdt_loader {
     		u8 base24_31;
 	} __attribute__ ((packed));
 	// Initie un descripteur de segment
-	static void init_gdt_desc(u32, u32, u8, u8, struct gdtdesc *);
+	void init_gdt_desc(u32, u32, u8, u8, struct gdtdesc *);
 
 	public:
 	// Registre GDT
