@@ -12,7 +12,7 @@ mount -o loop -t ext2 floppyA /mnt/loop
 
 mkdir /mnt/loop/grub
 
-cp /boot/grub/stage* /mnt/loop/grub
+cp stage* /mnt/loop/grub
 
 cat > /mnt/loop/grub/menu.lst << EOF
 title=DOggOS
